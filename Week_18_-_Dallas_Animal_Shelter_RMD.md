@@ -5,59 +5,18 @@ Tidy Tuesday - Week 18
 #Load packages
 library(ggplot2)
 library(tidyverse)
-```
-
-    ## -- Attaching packages ------------------------------------------------------------------- tidyverse 1.2.1 --
-
-    ## v tibble  1.4.2     v purrr   0.2.5
-    ## v tidyr   0.8.1     v dplyr   0.7.6
-    ## v readr   1.1.1     v stringr 1.3.1
-    ## v tibble  1.4.2     v forcats 0.3.0
-
-    ## -- Conflicts ---------------------------------------------------------------------- tidyverse_conflicts() --
-    ## x dplyr::filter() masks stats::filter()
-    ## x dplyr::lag()    masks stats::lag()
-
-``` r
 library(readxl)
 library(gridExtra)
-```
-
-    ## 
-    ## Attaching package: 'gridExtra'
-
-    ## The following object is masked from 'package:dplyr':
-    ## 
-    ##     combine
-
-``` r
 library(grid)
 library(summarytools)
 library(janitor)
 library(scales)
-```
 
-    ## 
-    ## Attaching package: 'scales'
-
-    ## The following object is masked from 'package:purrr':
-    ## 
-    ##     discard
-
-    ## The following object is masked from 'package:readr':
-    ## 
-    ##     col_factor
-
-``` r
 #Read data
 dat <- read_excel("week18_dallas_animals.xlsx")
 
 view(dfSummary(dat))
 ```
-
-    ## Method 'viewer' only valid within RStudio. Switching method to 'browser'.
-
-    ## Output file written: C:\Users\DANAAN~1\AppData\Local\Temp\RtmpK26dp1\file57187bf31577.html
 
 Bar Chart of Animal Type
 ========================
