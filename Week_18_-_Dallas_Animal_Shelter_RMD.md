@@ -96,6 +96,8 @@ p <- dat %>%
   ylim(c(0, 8500))
 
 gg <- arrangeGrob(p, top = grobs, padding = unit(2.6, "line")) # add the title from above
+grid.newpage() #use this code to test your figures
+grid.draw(gg)
 
 ggsave(filename = "animaltype.png", #use this code to finalize your figures into a png saved on your comp
        plot = grid.draw(gg),
@@ -170,8 +172,8 @@ gs <- grobTree(
 )
 
 gg <- arrangeGrob(p, top = gs, padding = unit(2.6, "line"))
-# grid.newpage() #use this code to test your figures
-# grid.draw(gg)
+grid.newpage() #use this code to test your figures
+grid.draw(gg)
 
 ggsave(filename = "outcometype_catdog.png", #use this code to finalize your figures into a png saved on your comp
        plot = grid.draw(gg),
